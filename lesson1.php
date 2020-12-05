@@ -34,8 +34,81 @@ $arr=[
 // }
 // }
 
-var_export(array_merge($list,$arr));
 
+// $arr =
+// [ '1'=> 1 , 
+// '2' => 2 , 
+// '3'=> [ 
+// '1'=> 1 ,
+// '2'=> 2 ,
+// ]];
+
+// $arr1 = [ 
+// '1' => 10 , 
+// '2' =>[
+// '1' =>20, 
+// '2' =>30,
+// '3' =>10,],
+// '3' =>20,];
+
+// function arSum(array $arr1):int 
+// {
+	// return array_sum($arr1);
+// }
+
+// function arSumRec(array $arr1):int 
+// {
+	// $sum=arSum($arr1);
+	// foreach($arr1 as $key => $value) 
+	// {
+		// if (is_array ($value))
+		// { 
+			// $sum+=arSumRec($value);
+		// }
+	// }
+	// return $sum;
+// }
+
+
+
+
+ 
+// function myCounter(array $arr) {
+	// $counter = 1;
+	// foreach($arr as $key => $value)
+	// {
+		// if (is_array($value))
+		// {
+			// myCounter($value);
+		// }
+		// else 
+		// {
+			// if ($counter == 2)
+			// {
+				// echo '<br>';
+				// var_export($value);
+			// }
+		// }
+	// $counter++;
+	// }
+// }
+
+// myCounter($arr);
+
+echo '<br>';
+
+function test ($a=10)
+{
+	
+	return $a;
+}
+
+function test1($b)
+{
+	echo test($b);
+}
+
+test1(20)	
 
 
 
